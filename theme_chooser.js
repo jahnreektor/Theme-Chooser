@@ -1,9 +1,11 @@
 $(document).ready(function() {
     var wasSelectedID, wasHoveredID, wasSelectedBgID, wasHoveredBgID;
-    var allMainMenuClasses="choice-orig-main choice-all-sea-green-main choice-all-orange-main choice-all-blue-main choice-all-red-main choice-all-green-main choice-beveled-green-main choice-beveled-blue-main choice-beveled-red-main default-main-menu";
-    var allSubMenuClasses="choice-orig-blue-sub choice-orig-red-sub choice-orig-sea-green-sub choice-orig-green-sub choice-orig-orange-sub choice-all-sea-green-sub choice-all-orange-sub choice-all-blue-sub choice-all-red-sub choice-all-green-sub choice-beveled-green-sub choice-beveled-blue-sub choice-beveled-red-sub default-sub-menu";
+    var allMainMenuClasses="choice-orig-main choice-all-sea-green-main choice-all-orange-main choice-all-blue-main choice-all-red-main choice-all-green-main choice-beveled-green-main choice-beveled-blue-main choice-beveled-red-main default-main-menu choice-beveled-orange-main choice-beveled-purple-main choice-beveled-pink-main choice-beveled-sea-green-main";
+    var allSubMenuClasses="choice-orig-blue-sub choice-orig-red-sub choice-orig-sea-green-sub choice-orig-green-sub choice-orig-orange-sub choice-all-sea-green-sub choice-all-orange-sub choice-all-blue-sub choice-all-red-sub choice-all-green-sub choice-beveled-green-sub choice-beveled-blue-sub choice-beveled-red-sub default-sub-menu choice-beveled-orange-sub choice-beveled-purple-sub choice-beveled-pink-sub choice-beveled-sea-green-sub";
     var allBgClasses="bg-1 bg-2 bg-3 bg-4 bg-5 default-bg";
 
+
+/*The 'mouse enter' and 'click' events for the menu theme chooser*/
     $(".choice").on('mouseenter', function () {
         $('.choice').removeClass('chosen');
         $(this).addClass('chosen');
@@ -16,11 +18,13 @@ $(document).ready(function() {
 	$(this).addClass('selected');
     });
     
+/*The preview gets set to whatever the last selected menu theme was (rather than whatever theme the user last hovered over)*/
     $("#theme-chooser").on('mouseleave', function () {
 	$('.choice').removeClass('chosen');
 	setPreview(wasSelectedID);
     });
 
+/*The preview gets set to whatever the last selected menu theme was (rather than whatever theme the user last hovered over)*/    
     $(".choice-bg").on('mouseenter', function () {
 	$('.choice-bg').removeClass('chosen');
 	$(this).addClass('chosen');
@@ -28,6 +32,7 @@ $(document).ready(function() {
 	setPreview(wasHoveredBgID);
     });
     
+    /*The 'mouse enter' and 'click' events for the bg theme chooser*/    
     $(".choice-bg").on('click', function () {
 	$('.choice-bg').removeClass('chosen selected');
 	wasSelectedBgID = $(this).attr("id");
