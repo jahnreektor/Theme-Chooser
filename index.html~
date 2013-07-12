@@ -1,0 +1,121 @@
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="theme_chooser.css">
+</head>
+<body>
+  <div id="theme-chooser-container">
+  <div id="theme-chooser">
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">Blue Accent</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">Red Accent</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">Green Accent</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">SeaGreen Accent</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">Orange Accent</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">All Green</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">All Blue</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">All Red</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">All SeaGreen</div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">All Orange</div>
+    </div>
+    <div class="choice" id="choice-orig-blue">
+      <div class="thumbnail-area">
+	<div class="thumbnail-main-menu choice-orig-main"></div>
+	<div class="thumbnail-sub-menu choice-orig-blue-sub"></div>
+      </div>
+      <div class="thumbnail-caption">Blue Accent</div>
+    </div>
+  </div>
+  </div>
+  <div class="preview-container">
+    PREVIEW
+    <div id="preview-area" class="default-bg">
+      <div id="preview-main-menu" class="default-main-menu">Example Main Menu</div>
+      <div id="preview-sub-menu" class="default-sub-menu">Example Sub Menu</div>
+    </div>
+  </div>
+  <div id="bg-chooser-container">
+    <div id="bg-chooser">
+      <div class="choice-bg" id="choice-bg-1">
+	<div class="bg-area"></div>
+	<div class="bg-caption">test font tet font s hiah isa sdfdsf</div>
+      </div>
+      <div class="choice-bg" id="choice-bg-2">
+	<div class="bg-area"></div>
+	<div class="bg-caption">test font tet font s hiah isa sdfdsf</div>
+      </div>
+      <div class="choice-bg" id="choice-bg-1">
+	<div class="bg-area"></div>
+	<div class="bg-caption">test font tet font s hiah isa sdfdsf</div>
+      </div>
+      <div class="choice-bg" id="choice-bg-2">
+	<div class="bg-area"></div>
+	<div class="bg-caption">test font tet font s hiah isa sdfdsf</div>
+      </div>
+      <div class="choice-bg" id="choice-bg-3">
+	<div class="bg-area"></div>
+	<div class="bg-caption">test font tet font s hiah isa sdfdsf</div>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="theme_chooser.js"></script>
+</body>
+</html>

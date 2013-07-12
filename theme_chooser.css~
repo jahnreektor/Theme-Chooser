@@ -1,0 +1,189 @@
+#bg-chooser-container{
+    width:1100px;
+    margin:auto;
+}
+
+#theme-chooser-container {
+    width: 1100px;
+    margin: auto;
+}
+
+#theme-chooser {
+    margin:auto;
+}
+.choice {
+    width: 80px;
+    height: 120px;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    border:1px solid white;
+}
+
+.choice-bg {
+    width:200px;
+    height:180px;
+    display:inline-block;
+    float:left;    
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.selected {
+    border: solid 1px blue;    
+    border-radius:3px;
+}
+
+.chosen {
+    border: solid 1px #3FA9F5;
+    border-radius:3px;
+}
+.thumbnail-area {
+    margin:auto;
+    background:blue;
+    width:80px;
+}
+
+.bg-area {
+    margin:auto;
+    width:100px;
+    height:80px;
+}
+
+.thumbnail-main-menu {
+    height:40px;
+}
+
+.thumbnail-sub-menu {
+
+    height: 20px;
+}
+
+.thumbnail-caption {
+    font-family: Gnuolane;
+    font-size:1.2em;
+    text-align:center;
+    padding-top:15px;
+}
+
+.bg-caption {
+    font-family: Gnuolane;
+    font-size:1.2em;
+    text-align:center;
+    padding-top:15px;
+}
+
+
+/* The Menu Themes */
+
+.choice-orig-main {
+     background:rgba(35,32,31,.8);
+}
+
+.choice-orig-blue-sub {
+     background:rgba(68,172,229,1);
+}
+.choice-orig-red-sub {
+     background:rgba(206,36,43,1);
+}
+.choice-orig-sea-green-sub {
+     background:rgba(1,102,102,1);
+}
+.choice-orig-green-sub {
+     background:rgba(0,104,55,1);
+}
+.choice-orig-orange-sub {
+     background:rgba(241, 90, 36, 1);
+}
+
+.choice-all-sea-green {
+
+}
+.choice-all-orange {
+
+}
+.choice-all-blue {
+
+}
+.choice-all-red {
+
+}
+.choice-all-green {
+
+}
+
+
+.blue {
+     background:blue;   
+}
+.red {
+     background:red;   
+}
+.yellow {
+     background:yellow;  
+}
+
+.preview-container {
+    clear:both;
+    width:100%;
+    padding: 30px 0;
+    text-align:center;
+    font-family:'Myriad Pro';
+}
+
+#preview-area {
+    height:300px;
+    width: 600px;
+    clear:both;
+    margin: auto;
+}
+
+#preview-main-menu {
+    float:left;
+    margin-top:  80px;
+    height:40px;
+    width:100%;
+    font-family:Gnuolane;
+    font-size:1.4em;
+    color:white;
+    text-align:center;
+    padding:7px;
+    box-sizing: border-box;
+}
+#preview-sub-menu {
+ /* margin-top:  100px;*/
+    height:20px;
+    width:100%;
+    clear:both;
+    font-family: Arial;
+    font-size:.9em;
+    text-align:center;
+    color:white;
+    padding:3px;
+    box-sizing: border-box;
+}
+
+.bg-1 {
+    background: url('http://placehold.it/600x300/blue');
+}
+
+.bg-2 {
+    background: url('http://placehold.it/600x300/red');
+}
+
+.bg-3 {
+   background: url('http://placehold.it/600x300/green');
+}
+
+.default-bg {
+    background:url('http://placehold.it/600x300');
+}
+
+.default-main-menu {
+   background:rgba(35,32,31,.8);
+}
+
+.default-sub-menu {
+   background: rgba(68,178,229, 1);
+}
+
