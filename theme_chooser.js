@@ -2,7 +2,7 @@ $(document).ready(function() {
     var wasSelectedID, wasHoveredID, wasSelectedBgID, wasHoveredBgID;
     var allMainMenuClasses="choice-orig-main choice-all-sea-green-main choice-all-orange-main choice-all-blue-main choice-all-red-main choice-all-green-main choice-beveled-green-main choice-beveled-blue-main choice-beveled-red-main default-main-menu choice-beveled-orange-main choice-beveled-purple-main choice-beveled-pink-main choice-beveled-sea-green-main";
     var allSubMenuClasses="choice-orig-blue-sub choice-orig-red-sub choice-orig-sea-green-sub choice-orig-green-sub choice-orig-orange-sub choice-all-sea-green-sub choice-all-orange-sub choice-all-blue-sub choice-all-red-sub choice-all-green-sub choice-beveled-green-sub choice-beveled-blue-sub choice-beveled-red-sub default-sub-menu choice-beveled-orange-sub choice-beveled-purple-sub choice-beveled-pink-sub choice-beveled-sea-green-sub";
-    var allBgClasses="bg-1 bg-2 bg-3 bg-4 bg-5 default-bg";
+    var allBgClasses="default-bg choice-bg-binding-dark choice-bg-binding-light choice-bg-brickwall choice-bg-cream-pixels choice-bg-mooning choice-bg-pw-pattern choice-bg-squairy-light choice-bg-ticks choice-bg-tweed";
 
 
 /*The 'mouse enter' and 'click' events for the menu theme chooser*/
@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(".choice-bg").on('mouseenter', function () {
 	$('.choice-bg').removeClass('chosen');
 	$(this).addClass('chosen');
-	    wasHoveredBgID = $(this).attr("id");
+	wasHoveredBgID = $(this).attr("id");
 	setPreview(wasHoveredBgID);
     });
     
@@ -50,7 +50,8 @@ $(document).ready(function() {
     };
 
     var clearPreviewBg = function () {
-	$('preview-main-area').removeClass(allBgClasses);
+	//alert("called clear");
+	$('#preview-area').removeClass(allBgClasses);
     };
 
 /*    var addClassToMainMenu = function(theClass) {
@@ -123,31 +124,63 @@ $(document).ready(function() {
 	    clearPreviewMenu();
 	    addClassesToMenu("choice-beveled-blue-main","choice-beveled-blue-sub");	    
 	    break;
-	case "choice-beveled-red":
+ 	case "choice-beveled-red":
 	    clearPreviewMenu();
 	    addClassesToMenu("choice-beveled-red-main","choice-beveled-red-sub");	    
 	    break;
+	case "choice-beveled-orange":
+	    clearPreviewMenu();
+	    addClassesToMenu("choice-beveled-orange-main","choice-beveled-orange-sub");	    
+	    break;
+	case "choice-beveled-purple":
+	    clearPreviewMenu();
+	    addClassesToMenu("choice-beveled-purple-main","choice-beveled-purple-sub");	    
+	    break;
+	case "choice-beveled-pink":
+	    clearPreviewMenu();
+	    addClassesToMenu("choice-beveled-pink-main","choice-beveled-pink-sub");	    
+	    break;
+	case "choice-beveled-sea-green":
+	    clearPreviewMenu();
+	    addClassesToMenu("choice-beveled-sea-green-main","choice-beveled-sea-green-sub");	    
+	    break;
 
-	    //THE FOLOWING ARE FOR BACKGROUNDS
-	case "choice-bg-1":
+   //THE FOLOWING ARE FOR BACKGROUNDS
+	case "choice-bg-binding-dark": //NOTE THAT THE CASES ARE IDS, while CLASSes are added
 	    clearPreviewBg();
-	    addClassToBg('choice-bg-1-main');
+	    addClassToBg('choice-bg-binding-dark');
 	    break;
-	case "choice-bg-2":
+	case "choice-bg-binding-light":
 	    clearPreviewBg();
-	    addClassToBg('choice-bg-2-main');
+	    addClassToBg('choice-bg-binding-light');
 	    break;
-	case "choice-bg-3":
+	case "choice-bg-cream-pixels":
 	    clearPreviewBg();
-	    addClassToBg('choice-bg-3-main');
+	    addClassToBg('choice-bg-cream-pixels');
 	    break;
-	case "choice-bg-4":
+	case "choice-bg-mooning":
 	    clearPreviewBg();
-	    addClassToBg('choice-bg-4-main');
+	    addClassToBg('choice-bg-mooning');
 	    break;
-	case "choice-bg-5":
+	case "choice-bg-brickwall":
 	    clearPreviewBg();
-	    addClassToBg('choice-bg-5-main');
+	    addClassToBg('choice-bg-brickwall');
+	    break;
+	case "choice-bg-pw-pattern":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-pw-pattern');
+	    break;
+	case "choice-bg-squairy-light":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-squairy-light');
+	    break;
+	case "choice-bg-ticks":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-ticks');
+	    break;
+	case "choice-bg-tweed":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-tweed');
 	    break;
 	default:
 	}

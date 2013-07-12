@@ -23,8 +23,8 @@
 }
 
 .choice-bg {
-    width:200px;
-    height:180px;
+    width:150px;
+    height:150px;
     display:inline-block;
     float:left;    
     box-sizing: border-box;
@@ -76,8 +76,9 @@
     padding-top:15px;
 }
 
-
+/*------------------*/
 /* The Menu Themes */
+/*------------------*/
 
 .choice-orig-main
  {
@@ -119,7 +120,7 @@
     background: rgba(0, 117, 178, .8);
 }
 .choice-all-red-main {
-     background:rgba(170,14,33,.8);
+     background:rgba(206,36,43,1);
 }
 .choice-all-red-sub {
     background: rgba(206, 36, 43, .8);
@@ -262,15 +263,60 @@
     background: rgba(0,179, 190,.8);
 }
 
-.blue {
-     background:blue;   
+/*-----------------------*/
+/* The Background Themes */
+/*-----------------------*/
+
+.choice-bg-binding-dark {
+    background: url('binding_dark.png');
 }
-.red {
-     background:red;   
+
+.choice-bg-binding-light {
+    background: url('binding_light.png');
 }
-.yellow {
-     background:yellow;  
+
+.choice-bg-brickwall {
+    background: url('brickwall.png');
 }
+
+.choice-bg-cream-pixels {
+    background: url('cream_pixels.png');
+}
+
+.choice-bg-mooning {
+    background: url('mooning.png');
+}
+
+.choice-bg-pw-pattern {
+    background: url('pw_pattern.png');
+}
+
+.choice-bg-squairy-light {
+    background: url('squairy_light.png');
+}
+
+.choice-bg-ticks {
+    background: url('ticks.png');
+}
+
+.choice-bg-tweed {
+    background: url('tweed.png');
+}
+
+
+.bg-repeating {
+    background-repeat: normal;
+}
+
+.bg-cover {
+    
+}
+
+.bg-cover-preview { /*modified for preview especially*/
+
+
+}
+
 
 .preview-container {
     clear:both;
