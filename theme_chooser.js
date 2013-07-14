@@ -2,7 +2,7 @@ $(document).ready(function() {
     var wasSelectedID, wasHoveredID, wasSelectedBgID, wasHoveredBgID;
     var allMainMenuClasses="choice-orig-main choice-all-sea-green-main choice-all-orange-main choice-all-blue-main choice-all-red-main choice-all-green-main choice-beveled-green-main choice-beveled-blue-main choice-beveled-red-main default-main-menu choice-beveled-orange-main choice-beveled-purple-main choice-beveled-pink-main choice-beveled-sea-green-main";
     var allSubMenuClasses="choice-orig-blue-sub choice-orig-red-sub choice-orig-sea-green-sub choice-orig-green-sub choice-orig-orange-sub choice-all-sea-green-sub choice-all-orange-sub choice-all-blue-sub choice-all-red-sub choice-all-green-sub choice-beveled-green-sub choice-beveled-blue-sub choice-beveled-red-sub default-sub-menu choice-beveled-orange-sub choice-beveled-purple-sub choice-beveled-pink-sub choice-beveled-sea-green-sub";
-    var allBgClasses="default-bg choice-bg-binding-dark choice-bg-binding-light choice-bg-brickwall choice-bg-cream-pixels choice-bg-mooning choice-bg-pw-pattern choice-bg-squairy-light choice-bg-ticks choice-bg-tweed";
+    var allBgClasses="default-bg choice-bg-binding-dark choice-bg-binding-light choice-bg-brickwall choice-bg-cream-pixels choice-bg-mooning choice-bg-pw-pattern choice-bg-squairy-light choice-bg-ticks choice-bg-tweed choice-bg-mountains-wallpaper choice-bg-stretching-wallpaper choice-bg-stretching-green-wallpaper";
 
 
 /*The 'mouse enter' and 'click' events for the menu theme chooser*/
@@ -181,6 +181,18 @@ $(document).ready(function() {
 	case "choice-bg-tweed":
 	    clearPreviewBg();
 	    addClassToBg('choice-bg-tweed');
+	    break;
+ 	case "choice-bg-mountains-wallpaper":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-mountains-wallpaper');
+	    break;
+ 	case "choice-bg-stretching-wallpaper":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-stretching-wallpaper');
+	    break;
+ 	case "choice-bg-stretching-green-wallpaper":
+	    clearPreviewBg();
+	    addClassToBg('choice-bg-stretching-green-wallpaper');
 	    break;
 	default:
 	}

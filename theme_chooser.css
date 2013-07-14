@@ -303,6 +303,17 @@
     background: url('tweed.png');
 }
 
+.choice-bg-mountains-wallpaper {
+    background:url('mountains_for_preview.jpg');
+}
+
+.choice-bg-stretching-wallpaper {
+    background:url('stretching_preview.png');
+}
+
+.choice-bg-stretching-green-wallpaper {
+    background:url('stretching_green_preview.png');
+}
 
 .bg-repeating {
     background-repeat: normal;
@@ -317,6 +328,10 @@
 
 }
 
+.note {
+    font-size: .8em;
+    font-style: italic;
+}
 
 .preview-container {
     clear:both;
