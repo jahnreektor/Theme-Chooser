@@ -15,7 +15,7 @@
 }
 .choice {
     width: 80px;
-    height: 120px;
+    height: 130px;
     display: inline-block;
     float: left;
     padding: 5px;
@@ -23,12 +23,12 @@
 }
 
 .choice-bg {
-    width:150px;
-    height:150px;
-    display:inline-block;
-    float:left;    
-    box-sizing: border-box;
-    padding:10px;
+    width: 80px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    border: solid 1px white;
 }
 
 .selected {
@@ -47,7 +47,7 @@
 
 .bg-area {
     margin:auto;
-    width:100px;
+    width:80px;
     height:80px;
 }
 
@@ -67,6 +67,7 @@
     font-size:1.2em;
     text-align:center;
     padding-top:15px;
+    line-height: 90%;
 }
 
 .bg-caption {
@@ -141,7 +142,6 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
     background-color:#77d42a;
     border:1px solid #268a16;
-    display:inline-block;
     color:#306108;
     text-decoration:none;
     text-shadow:1px 1px 0px #aade7c;
@@ -158,7 +158,6 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
     background-color:#63b8ee;
     border:1px solid #3866a3;
-    display:inline-block;
     color:#14396a;
     text-decoration:none;
     text-shadow:1px 1px 0px #7cacde;
@@ -177,7 +176,6 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
     background-color:#fe1a00;
     border:1px solid #d83526;
-    display:inline-block;
     color:#ffffff;
     text-decoration:none;
     text-shadow:1px 1px 0px #b23e35;
@@ -196,7 +194,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
     background-color: rgb(243, 144, 14);
     border: 1px solid rgb(243, 151, 51);
-    display: inline-block;
     color: #ffffff;
     text-decoration: none;
     text-shadow: 1px 1px 0px rgb(235, 160, 31);
@@ -215,7 +212,6 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c123de', endColorstr='#a20dbd');
     background-color:#c123de;
     border:1px solid #a511c0;
-    display:inline-block;
     color:#ffffff;
     text-decoration:none;
     text-shadow:1px 1px 0px #9b14b3;
@@ -234,7 +230,6 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d');
     background-color:#ff5bb0;
     border:1px solid #ee1eb5;
-    display:inline-block;
     color:#ffffff;
     text-decoration:none;
     text-shadow:1px 1px 0px #c70067;
@@ -253,7 +248,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
     background-color: rgb(6, 112, 57);
     border: 1px solid rgb(7, 128, 89);
-    display: inline-block;
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: 1px 1px 0px rgb(8, 85, 63);
@@ -303,30 +297,72 @@
     background: url('tweed.png');
 }
 
-.choice-bg-mountains-wallpaper {
-    background:url('mountains_for_preview.jpg');
+.choice-bg-el-chalten-mountains {
+    background:url('el_chalten_mountains_preview.jpg');
+    background-position: center;
 }
 
-.choice-bg-stretching-wallpaper {
-    background:url('stretching_preview.png');
+.el-chalten-mountains-full {
+    background:url('el_chalten_mountains_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.choice-bg-stretching-green-wallpaper {
-    background:url('stretching_green_preview.png');
+.choice-bg-atlanta-skyline {
+   background:url('atlanta_skyline_preview.jpg');
+   background-position: center;
+}
+
+.atlanta-skyline-full {
+    background:url('atlanta_skyline_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.choice-bg-cannon-beach {
+    background:url('cannon_beach_preview.jpg');
+    background-position: center;
+}
+
+.cannon-beach-full {
+    background:url('cannon_beach_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.choice-bg-mount-hood {
+   background:url('mount_hood_preview.jpg');
+   background-position: center;
+}
+
+
+.mount-hood-full {
+    background:url('mount_hood_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.choice-bg-hong-kong-skyline {
+    background:url('hong_kong_skyline_preview.jpg');    
+    background-position: center;
+}
+
+.hong-kong-skyline-full {
+    background:url('hong_kong_skyline_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .bg-repeating {
     background-repeat: normal;
 }
 
-.bg-cover {
-    
-}
-
-.bg-cover-preview { /*modified for preview especially*/
-
-
-}
 
 .note {
     font-size: .8em;
@@ -403,5 +439,9 @@
 
 .default-sub-menu {
    background: rgba(68,178,229, 1);
+}
+
+.clear_both{
+	clear:both;
 }
 
